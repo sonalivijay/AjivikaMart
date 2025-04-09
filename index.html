@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aajivika Mart Navbar</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+
+
+    <link href="./css/custom.css" rel="stylesheet">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+   
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+    <div class="ml-6">
+        <img src="./img/Flag_of_India.svg" alt="India Flag" width="30">
+        <span>Government of India</span>
+    </div>
+    <div>
+        <span> <a href="#main-content" class="icon-btn" style="text-decoration: none;">Skip to Main Content</a></span>
+        <button class="icon-btn" id="decrease-font">A-</button>
+        <button class="icon-btn" id="reset-font">A</button>
+        <button class="icon-btn" id="increase-font">A+</button>
+        <i class="fa-solid fa-circle-half-stroke" id="toggle-dark-mode" style="cursor:pointer;"></i>
+        <button class="icon-btn">More</button>
+    </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg shadow-sm">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="./img/emblem.png" alt="logo" width="60"> 
+            <img src="./img/logo.png" alt="logo" width="40">
+            <div class="ms-2">
+                <span class="sub-logo-title">Madhya Pradesh</span>
+                <div class="logo-text">Aajivika Mart</div>
+            </div>
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Categories
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown">
+                            <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Category 1</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Subcategory 1.1</a></li>
+                                <li><a class="dropdown-item" href="#">Subcategory 1.2</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Category 2</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Subcategory 2.1</a></li>
+                                <li><a class="dropdown-item" href="#">Subcategory 2.2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            
+                <li class="nav-item"><a class="nav-link" href="#">Diary/Calendar 2024</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sahayata Portal</a></li>
+            </ul>
+
+            <div class="d-flex align-items-center gap-3">
+                <!-- Search Icon -->
+                <div class="position-relative">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" class="search-input" placeholder="Search...">
+                </div>
+            
+                <!-- Cart Icon with Badge -->
+                <div class="position-relative">
+                    <a href="checkout.html" style="color:#000"><i class="fa-solid fa-cart-shopping fs-4"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-danger rounded-pill">
+                        3
+                    </span>
+                </a>
+                </div>
+            
+                <!-- User Icon -->
+                <div class="position-relative">
+                    <i class="fa-solid fa-user fs-4"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div id="main-content" style="font-size: 16px;">
+<div id="bannerCarousel" class="carousel slide" data-bs-ride="false">
+    
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- Carousel Slides -->
+    <div class="carousel-inner">
+        
+        <!-- Slide 1 -->
+        <div class="carousel-item active banner" style="background-image: url('./img/banner-img-1.png');background-size: cover;">
+            <div class="carousel-caption">
+                <h2> EMPOWERING ARTISANS. EMPOWERING MADHYA PRADESH </h2>
+                <p>Support local craftsmanship and sustainable livelihoods with every purchase. </p>
+                <a href="productlistbycategory.html" class="btn btn-lg btn-theme">View Product</a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Navigation Buttons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+
+</div>
+<div class="container mt-5">
+    <div class="search-section d-flex flex-column flex-lg-row align-items-center justify-content-between">
+        
+        <!-- Left Content -->
+        <div>
+            <h4><i class="fa-solid fa-magnifying-glass"></i> Want to search?</h4>
+            <p>Search about artisans, categories, products here.</p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-bar mt-3 mt-lg-0">
+            <input type="text" class="form-control" placeholder="Search here...">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </div>
+
+        <!-- Trending Search -->
+        <div class="trending-btns mt-3 mt-lg-0">
+            <button class="btn"><i class="fa-solid fa-chart-line"></i> Handloom Products</button>
+            <button class="btn"><i class="fa-solid fa-chart-line"></i> Raw Statue</button>
+        </div>
+
+    </div>
+</div>
+
+<div class="container" style="padding-top: 40px;"> 
+    <!-- Heading and View All Button -->
+    <div class="category-header">
+        <h2> EXPLORE BY CATEGORY</h2>
+        <a href="productlistbycategory.html" class="view-all-btn">View All <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    
+    <div class="row p-3">
+        <!-- Category 1 -->
+        <div class="col-md-4">
+            <div class="category-card">
+                <img src="./img/img-category-1.jpg" alt="Handicrafts" width="50" height="30">
+                <div class="category-name">Fashion</div>
+            </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="col-md-4">
+            <div class="category-card">
+                <img src="./img/img-category-1.jpg" alt="Handmade Items">
+                <div class="category-name">Furnitutre</div>
+            </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="col-md-4">
+            <div class="category-card">
+                <img src="./img/img-category-1.jpg" alt="Art & Paintings">
+                <div class="category-name">Art & Paintings</div>
+            </div>
+        </div>
+    </div>
+    <div class="row p-3">
+        <!-- Category 1 -->
+        <div class="col-md-4">
+            <div class="category-card">
+                <img src="./img/img-category-1.jpg" alt="Handicrafts">
+                <div class="category-name">Fashion</div>
+            </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="col-md-4">
+            <div class="category-card">
+                <img src="./img/img-category-1.jpg" alt="Handmade Items">
+                <div class="category-name">Furnitutre</div>
+            </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="col-md-4">
+            <div class="category-card">
+                <img src="./img/img-category-1.jpg" alt="Art & Paintings">
+                <div class="category-name">Art & Paintings</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container my-5" style="padding-bottom: 30px;">
+    <!-- Heading and View All Button -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold">FEATURED PRODUCTS</h2>
+        <a href="productlistbycategory.html" class="view-all-btn">View All <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+    <!-- Carousel -->
+    <div id="productCarousel" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-inner">
+            <!-- First Row -->
+            <div class="carousel-item active">
+                <div class="row">
+                    <!-- Product 1 -->
+                    <div class="col-md-3">
+                        <div class="product-card">
+                            <div class="category-badge">Marble Product</div>
+                            <img src="./img/product-4.jpg" class="product-image" alt="Raw Statue">
+                            <div class="product-info">
+                                <h5>Raw Statue</h5>
+                                <div class="rating">
+                                     4.8 ⭐
+                                </div>
+                                <p class="price">Rs. 300000 / Quin</p>
+                                <a class="cart-item"><i class="fa fa-shopping-cart cart-icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="col-md-3">
+                        <div class="product-card">
+                            <div class="category-badge">Bamboo Crafts</div>
+                            <img src="./img/product-1.jpg"  class="product-image" alt="Bamboo Ship">
+                            <div class="product-info">
+                                <h5>Bamboo Ship</h5>
+                                <div class="rating">
+                                     4.8 ⭐
+                                </div>
+                                <p class="price">Rs. 720 / piece</p>
+                                <a class="cart-item"><i class="fa fa-shopping-cart cart-icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="col-md-3">
+                        <div class="product-card">
+                            <div class="category-badge">Construction</div>
+                            <img src="./img/product-4.jpg"  class="product-image" alt="Fly Ash Brick">
+                            <div class="product-info">
+                                <h5>Fly Ash Brick</h5>
+                                <div class="rating">
+                                     4.8 ⭐
+                                </div>
+                                <p class="price">Rs. 5 / piece</p>
+                                <a class="cart-item"><i class="fa fa-shopping-cart cart-icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-card">
+                            <div class="category-badge">Construction</div>
+                            <img src="./img/product-4.jpg"  class="product-image" alt="Fly Ash Brick">
+                            <div class="product-info">
+                                <h5>Fly Ash Brick</h5>
+                                <div class="rating">
+                                     4.8 ⭐
+                                </div>
+                                <p class="price">Rs. 5 / piece</p>
+                                <a class="cart-item"><i class="fa fa-shopping-cart cart-icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Row -->
+            <div class="carousel-item">
+                <div class="row">
+                    <!-- Product 4 -->
+                    <div class="col-md-3">
+                        <div class="product-card">
+                            <div class="category-badge">Home & Kitchen</div>
+                            <img src="./img/product-2.jpg" class="product-image" alt="Besan">
+                            <div class="product-info">
+                                <h5>Besan</h5>
+                                <div class="rating">
+                                     4.8 ⭐
+                                </div>
+                                <p class="price">Rs. 75 / kg</p>
+                                <a class="cart-item"><i class="fa fa-shopping-cart cart-icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-card">
+                            <div class="category-badge">Home & Kitchen</div>
+                            <img src="./img/product-2.jpg" class="product-image" alt="Besan">
+                            <div class="product-info">
+                                <h5>Besan</h5>
+                                <div class="rating">
+                                     4.8 ⭐
+                                </div>
+                                <p class="price">Rs. 75 / kg</p>
+                                <a class="cart-item"><i class="fa fa-shopping-cart cart-icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 5 -->
+                    <div class="col-md-3">
+                        <div class="product-card">
+                            <div class="category-badge">Handmade Art</div>
+                            <img src="./img/product-1.jpg" class="product-image" alt="Handmade Art">
+                            <div class="product-info">
+                                <h5>Handmade Painting</h5>
+                                <div class="rating">
+                                     4.8 ⭐
+                                </div>
+                                <p class="price">Rs. 1500 / piece</p>
+                                <a class="cart-item"><i class="fa fa-shopping-cart cart-icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 6 -->
+                    <div class="col-md-3">
+                        <div class="product-card">
+                            <div class="category-badge">Jewelry</div>
+                            <img src="./img/product-4.jpg" class="product-image" alt="Jewelry">
+                            <div class="product-info">
+                                <h5>Handmade Jewelry</h5>
+                                <div class="rating">
+                                     4.8 ⭐
+                                </div>
+                                <p class="price">Rs. 2500 / set</p>
+                                <a class="cart-item"><i class="fa fa-shopping-cart cart-icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+    
+</div>
+<div class="container mt-5">
+    <div class="row popular-section">
+        <!-- Left Section (Product Card) -->
+        <div class="col-md-5">
+            <h4 class="fw-bold">MOST POPULAR PRODUCTS <span class="fw-light">(AS PER CITIES)</span></h4>
+            <p class="city-badge"><strong>▶ </strong> Gwalior</p>
+
+            <div class="product-card">
+                <img src="./img/product-1.jpg" alt="Bamboo Ship">
+                <div class="product-info">
+                    <h5>Bamboo Ship</h5>
+                    <p class="rating">⭐ 4.8</p>
+                    <p>Rs. 720 / piece</p>
+                </div>
+            </div>
+
+            <!-- Small Thumbnail Images -->
+            <div class="mt-3 d-flex gap-2 small-thumbnails">
+                <img src="./img/product-2.jpg" alt="Marble">
+                <img src="./img/product-3.jpg" alt="Painting">
+            </div>
+        </div>
+
+        <!-- Right Section (City Map) -->
+        <div class="col-md-7 d-flex align-items-center justify-content-center">
+            <img src="./img/mp-map.png" class="city-map" alt="City Map">
+        </div>
+    </div>
+</div>
+<div class="container mt-5">
+    <!-- Section Header -->
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h3 class="section-heading">EXPLORE BY ART STYLE</h3>
+        <a href="productlistbycategory.html" class="view-all-btn">View All <i class="fa-solid fa-arrow-right"></i></a>
+   
+    </div>
+
+    <!-- Category Buttons -->
+    <div class="mb-4">
+        <button class="category-btn">Marble Art</button>
+        <button class="category-btn">Terracota Products</button>
+        <button class="category-btn">Bamboo Crafts</button>
+        <button class="category-btn">Sculptural Art</button>
+        <button class="category-btn">Body Cleansers</button>
+    </div>
+
+    <!-- Product Cards -->
+    <div class="row g-4">
+        <div class="col-md-3">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="badge-overlay">Uniform</span>
+                    <img src="./img/product-1.jpg" alt="School Uniform">
+                </div>
+                <div class="product-info">
+                    <h5>School Uniform</h5>
+                    <p class="rating">⭐ 4.8</p>
+                    <p>Rs. 320 / piece</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="badge-overlay">Art & Craft</span>
+                    <img src="./img/product-2.jpg" alt="Gondi Painting">
+                </div>
+                <div class="product-info">
+                    <h5>Gondi Painting</h5>
+                    <p class="rating">⭐ 4.8</p>
+                    <p>Rs. 1320 / piece</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="badge-overlay">Fashion</span>
+                    <img src="./img/product-3.jpg" alt="Slippers">
+                </div>
+                <div class="product-info">
+                    <h5>Slippers</h5>
+                    <p class="rating">⭐ 4.8</p>
+                    <p>Rs. 80 / set</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="badge-overlay">Fashion</span>
+                    <img src="./img/product-4.jpg" alt="Slippers">
+                </div>
+                <div class="product-info">
+                    <h5>Slippers</h5>
+                    <p class="rating">⭐ 4.8</p>
+                    <p>Rs. 80 / set</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5 pb-3">
+    <!-- Section Header -->
+    <h3 class="section-heading">ITEMS IN YOUR CART</h3>
+
+    <div class="row g-4">
+        <!-- Product Cards -->
+        <div class="col-md-3">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="badge-overlay">Marble Product</span>
+                    <img src="./img/product-1.jpg" alt="Raw Statue">
+                </div>
+                <div class="product-info">
+                    <h5>Raw Statue</h5>
+                    <p class="rating">⭐ 4.8</p>
+                    <p>Rs. 300000 / Quin</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="badge-overlay">Bamboo Crafts</span>
+                    <img src="./img/product-3.jpg" alt="Bamboo Ship">
+                </div>
+                <div class="product-info">
+                    <h5>Bamboo Ship</h5>
+                    <p class="rating">⭐ 4.8</p>
+                    <p>Rs. 720 / piece</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="badge-overlay">Construction</span>
+                    <img src="./img/product-2.jpg" alt="Fly Ash Brick">
+                </div>
+                <div class="product-info">
+                    <h5>Fly Ash Brick</h5>
+                    <p class="rating">⭐ 4.8</p>
+                    <p>Rs. 5 / piece</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call-to-Action Box -->
+        <div class="col-md-3">
+            <div class="cta-box h-100 d-flex flex-column justify-content-center w-100">
+                <p>Let's make it happen—click below to grab your favorites and check out hassle-free.</p>
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-5 pb-3">
+    <!-- Section Header -->
+    <h3 class="section-heading">RESULT AS PER YOUR RECENT SEARCH</h3>
+
+    <div class="row g-4">
+        <!-- Product Cards -->
+        <div class="col-md-3">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="badge-overlay">Marble Product</span>
+                    <img src="./img/product-1.jpg" alt="Raw Statue">
+                </div>
+                <div class="product-info">
+                    <h5>Raw Statue</h5>
+                    <p class="rating">⭐ 4.8</p>
+                    <p>Rs. 300000 / Quin</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="badge-overlay">Bamboo Crafts</span>
+                    <img src="./img/product-3.jpg" alt="Bamboo Ship">
+                </div>
+                <div class="product-info">
+                    <h5>Bamboo Ship</h5>
+                    <p class="rating">⭐ 4.8</p>
+                    <p>Rs. 720 / piece</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="badge-overlay">Construction</span>
+                    <img src="./img/product-2.jpg" alt="Fly Ash Brick">
+                </div>
+                <div class="product-info">
+                    <h5>Fly Ash Brick</h5>
+                    <p class="rating">⭐ 4.8</p>
+                    <p>Rs. 5 / piece</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call-to-Action Box -->
+        <div class="col-md-3">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="badge-overlay">Construction</span>
+                    <img src="./img/product-2.jpg" alt="Fly Ash Brick">
+                </div>
+                <div class="product-info">
+                    <h5>Fly Ash Brick</h5>
+                    <p class="rating">⭐ 4.8</p>
+                    <p>Rs. 5 / piece</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5" style="    background: #fcecbc;
+border-radius: 15px;
+padding: 54px;">
+    <h2 class="text-center fw-bold">LATEST NEWS AND ANNOUNCEMENTS</h2>
+
+    <div id="newsCarousel" class="carousel slide" data-bs-ride="false">
+        
+        <!-- Dots for navigation -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="1"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <!-- First Slide (3 News Cards) -->
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="news-card">
+                            <small>01 Oct 2023</small>
+                            <h5>Chief Minister inaugurates Aajeevika Mart</h5>
+                            <p>The mart offers a diverse array of items, including food products and hygiene materials.</p>
+                            <a href="#" class="read-more-btn">Read More →</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="news-card">
+                            <small>05 Oct 2023</small>
+                            <h5>Local artisans showcase handmade crafts</h5>
+                            <p>Handmade crafts including pottery, textiles, and decorative items are being showcased.</p>
+                            <a href="#" class="read-more-btn">Read More →</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="news-card">
+                            <small>10 Oct 2023</small>
+                            <h5>New policies for rural businesses</h5>
+                            <p>Government introduces new financial schemes for small-scale rural entrepreneurs.</p>
+                            <a href="#" class="read-more-btn">Read More →</a>
+                        </div>
+                    </div>  
+                </div>   
+            </div>   
+        </div>   
+    </div>  
+</div> 
+<div class="container my-5">
+    <div class="d-flex justify-content-between align-items-center">
+        <h2 class="faq-title">HAVE ANY QUESTIONS?</h2>
+        <button class="view-all-btn">View all FAQs</button>
+    </div>
+
+    <div class="accordion" id="faqAccordion">
+        <!-- First FAQ - Open by default -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqContent1" aria-expanded="true">
+                    What is MP Aajeevika Mart?
+                </button>
+            </h2>
+            <div id="faqContent1" class="accordion-collapse collapse show" aria-labelledby="faq1">
+                <div class="accordion-body">
+                    MP Aajeevika Mart is an initiative to promote and sell handmade and locally-produced items created by rural entrepreneurs and artisans in Madhya Pradesh, fostering sustainable livelihoods.
+                </div>
+            </div>
+        </div>
+
+        <!-- Second FAQ -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqContent2">
+                    Who manages MP Aajeevika Mart?
+                </button>
+            </h2>
+            <div id="faqContent2" class="accordion-collapse collapse" aria-labelledby="faq2">
+                <div class="accordion-body">
+                    MP Aajeevika Mart is managed by government initiatives supporting rural entrepreneurship.
+                </div>
+            </div>
+        </div>
+
+        <!-- Third FAQ -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqContent3">
+                    What kind of products are available on MP Aajeevika Mart?
+                </button>
+            </h2>
+            <div id="faqContent3" class="accordion-collapse collapse" aria-labelledby="faq3">
+                <div class="accordion-body">
+                    The platform offers a wide range of handmade products, including textiles, handicrafts, and organic food items.
+                </div>
+            </div>
+        </div>
+
+        <!-- Fourth FAQ -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqContent4">
+                    Where are MP Aajeevika Marts located?
+                </button>
+            </h2>
+            <div id="faqContent4" class="accordion-collapse collapse" aria-labelledby="faq4">
+                <div class="accordion-body">
+                    MP Aajeevika Marts are located in various districts across Madhya Pradesh, providing accessibility to rural entrepreneurs.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+ <!-- Support Section -->
+ <div class="support-section">
+    <div class="row">
+       <div class="col-md-7 offset-1">
+        <h2 class="fw-bold" style="color: #ffffff;">Need Support?</h2>
+        <p style="color: #ffffff;">Reach out to us and we will get back to you!</p>
+       </div> 
+       <div class="col-md-3 offset-1">
+        <a href="#" class="btn">Get in touch <i class="fas fa-arrow-up-right-from-square"></i></a>
+
+       </div>
+    </div>
+ 
+</div>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- Left Section: Logo & Last Updated -->
+            <div class="col-md-3 text-center text-md-start">
+                <div class="d-inline-flex align-items-center px-3 py-2 rounded-pill" style="background-color: #ffffff;">
+                    <a class="navbar-brand d-flex align-items-center" href="#">
+                        <img src="./img/logo.png" alt="logo" width="40">
+                        <div class="ms-2">
+                            <span class="sub-logo-title" style="color: #000;">Madhya Pradesh</span>
+                            <div class="logo-text" style="color: #000;">Aajivika Mart</div>
+                        </div>
+                    </a>
+                </div>
+                <p class="last-updated mt-2">Last updated: 07-08-24</p>
+            </div>
+
+            <!-- Center Section: Navigation Links -->
+            <div class="col-md-6 text-center my-4 my-md-0">
+                <nav style="color: #ffffff;">
+                    <a href="#">Home</a> | 
+                    <a href="#">About Us</a> | 
+                    <a href="#">Categories</a> | 
+                    <a href="#">Daily Calendar 2024</a> | 
+                    <a href="#">Sahayata Portal</a>
+                </nav>
+                <div class="social-icons mt-3">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Right Section: Contact Info -->
+            <div class="col-md-3">
+                <h6 class="fw-bold" style="color: #ffffff;">Contact Us</h6>
+                <p  style="color: #ffffff;font-size: 14px;text-align: justify;">
+                    Online Revenue Demand and Payment Collection,
+                    123, Raj Bhavan Road, Bhopal, Madhya Pradesh, PIN - 462001
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bottom Footer -->
+<div class="footer-bottom">
+    <div class="row">
+        <div class="col-md-6">
+            <span style="color: #ffffff;" class="fw-bold">Copyright © 2020 MPMART - All Rights Reserved.</span>
+
+        </div>
+        <div class="col-md-6">
+            <a href="#" class="fw-bold" style="color: #ffffff;text-decoration: none;">Terms & Conditions</a> | 
+            <a href="#" class="fw-bold" style="color: #ffffff;text-decoration: none;">Privacy Policy</a> | 
+            <a href="#" class="fw-bold" style="color: #ffffff;text-decoration: none;">Contact Us</a>
+        </div>
+
+    </div>
+   
+   
+</div>
+<script src="./js/common.js"></script>
+</body>
+</html>
